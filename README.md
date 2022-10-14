@@ -80,57 +80,5 @@ Finally, the Euclidean distance, H4. The heuristic is similar to H2, but it uses
 (x2-x2)2+(y2-y2)2
 (3)
 
-Program Performance
-The program compares execution time, and the number of nodes expanded when using h1, h2, h3, and h4 for the different edge sizes based on the percent of misplaced tiles. The results of the experiments are displayed in this section of the report.
 
-
-Heuristic Average Execution Time
-Figure 2
-
-The above figure shows the average execution time for each heuristic when used for puzzles of edge sizes 2,3, and 4. The puzzles had different misplaced tile percentages.
-
-
-
-Heuristic by the Average Number of Node Expanded 
-Figure 3
-
-The above figure shows the average number of nodes expanded for each heuristic when used for puzzles of edge sizes 2,3, and 4. The puzzles had different misplaced tile percentages.
-
-Heuristic by the Average Number of Node Expanded Edge Size 2
-Figure 4
-
-The above figure shows the average number of nodes expanded for each heuristic when used for puzzles of edge sizes 2. The puzzles had different misplaced tile percentages.
-
-Heuristic by the Average Number of Node Expanded Edge Size 3
-Figure 5
-
-The above figure shows the average number of nodes expanded for each heuristic when used for puzzles of edge sizes 3. The puzzles had different misplaced tile percentages.
-
-Heuristic by the Average Number of Node Expanded Edge Size 4
-Figure 6
-
-The above figure shows the average number of nodes expanded for each heuristic when used for puzzles of edge sizes 4. The puzzles had different misplaced tile percentages.
-
-Heuristic by the Average Time Edge Size 2
-Figure 7
-
-The above figure shows the average execution time for each heuristic when used for puzzles of edge sizes 2. The puzzles had different misplaced tile percentages.
-
-Heuristic by the Average Time Edge Size 3
-Figure 8
-
-The above figure shows the average execution time for each heuristic when used for puzzles of edge sizes 3. The puzzles had different misplaced tile percentages.
-
-Heuristic by the Average Time Edge Size 4
-Figure 9
-
-The above figure shows the average execution time for each heuristic when used for puzzles of edge sizes 4. The puzzles had different misplaced tile percentages.
-
-Summary and Result Interpretation
-
-The graphs above show that with different edge sizes there are some changes in the heuristics’ ranking. Looking at the overall average execution time and the number of nodes expanded (Figures 2 and Figure 3), we see that H4 expands the least number of nodes and that it is the fastest. However, looking at Figure 8 and Figure 7, we see that H4 is not the fastest heuristics at edge sizes 2 and 3. Thus it seems like H4 does extra work when edge sizes are small which makes it inefficient. In general, H4 seems to do better than the other heuristics. 
-
-On the other hand, H3 seems to be the worst algorithm in all measures. It ranked the highest in execution time and the number of nodes expanded in all situations except in Figure 9. This low performance may be the result of the algorithm's high complexity time compared with the other heuristics. The Algorithm's complexity time is O(n^2). Even after H3 is able to produce an estimate this estimate may not be as informative as the other heuristics.
-
-Even though H1 expands more nodes on average than the other heuristics, it still remains relatively fast. In Figure 3, we see that H1 expands double the amount of nodes that h2 expands. However, looking at Figure 2, we see that H1 is faster than H2. This may be because of the heuristic’s simplicity and linear time complexity. 
 
